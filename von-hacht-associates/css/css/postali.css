@@ -1,0 +1,46 @@
+/* remove second attorney block on webinars page */
+.page-id-23318 .attorney-info__item:nth-child(even),
+.page-id-20794 .attorney-info__item:nth-child(even),
+.page-id-23554 .attorney-info__item:nth-child(even) {
+    flex-direction: row-reverse;
+    display: none;
+}
+
+.spacer-30 { height: 30px; display: block; width: 100%; }
+.site-footer { padding-bottom: 0; }
+.site-footer__inner.footer-form { background: #00758d; padding: 60px 0; }
+.site-footer__inner.footer-form .gform_footer { text-align: center; }
+.site-footer__inner.footer-form .gform_footer .gform_button { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+.site-footer__inner.footer-main { padding: 60px 0; }
+.site-footer__inner.footer-main .column-25 p,
+.site-footer__inner.footer-main .column-25 ul li { font-family: "calibri-bold", sans-serif; font-size: 16px; line-height: 150%; }
+.site-footer__inner.footer-main .column-25 ul li a { color:#00758d; }
+.site-footer__inner.footer-main .column-25 ul li a:hover { text-decoration: underline; }
+.site-footer__inner.footer-main .column-25 ul { margin:0; }
+.site-footer__inner.footer-main .grid-container  { max-width: 85%; margin:0 auto }
+.site-footer__inner.footer-main .footer__content-container { padding-right: 0; width: 100%; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; padding-right: 0 !important; }
+.site-footer__inner.footer-main .footer__content-container .column-25 { width: 23%; text-align: left; }
+.site-footer__inner.footer-main .footer__content-container .column-25 .footer__address { padding: 0; }
+.site-footer__inner.footer-main .footer__content-container .column-25 .footer__address:after { display:none; }
+.site-footer__inner.footer-main .footer__content-container .column-full { width: 100%; text-align: left; display: flex; align-items: center; gap: 30px; }
+.site-footer__inner.footer-main .footer__content-container .column-full .copyright { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; padding-top: 0; margin-top: 4px; }
+.site-footer__inner.footer-main .footer__content-container .column-full .copyright p { line-height: 150%; font-family: "calibri-bold", sans-serif; font-size: 16px; }
+.site-footer__inner.footer-main .footer__content-container .column-full ul { display: inline-flex; align-items: center; gap: 30px; margin: 0; }
+.site-footer__inner.footer-main .footer__content-container .column-full ul li a { font-family: "calibri-bold", sans-serif; font-size: 16px; line-height: 150%; text-decoration: underline; }
+.site-footer__inner.footer-main .footer__content-container .column-full ul li a:hover { text-decoration: none; }
+.site-footer__inner.footer-main .footer__content-container .column-full ul li a.button { padding: 10px; text-decoration: none; }
+.site-footer__inner.footer-main .column-full ul.socials { padding: 0; border-top: none; border-bottom: none; gap: 10px; }
+.site-footer__inner.footer-main .column-full ul.socials li { display: inline-block; margin-right: 5px; margin-bottom: 0; }
+.site-footer__inner.footer-main .column-full ul.socials li img { width: 35px; }
+.site-footer__inner.footer-main .footer__content-container .column-full span.separator { font-size: 14px; font-weight: bold; }
+
+@media screen and (max-width:1024px) {
+    .site-footer__inner.footer-main .footer__content-container .column-25 { width: 48%; margin-bottom: 40px; }
+    .site-footer__inner.footer-main .footer__content-container .column-full { width: 100%; flex-wrap: wrap; flex-direction: column; display: flex; align-items: flex-start; gap: 10px; }
+    .site-footer__inner.footer-main .footer__content-container .column-full span { display:none; }
+}
+
+@media screen and (max-width:600px) {
+    .site-footer__inner.footer-main .footer__content-container .column-25 { width: 100%; margin-bottom: 40px; }
+    .site-footer__inner.footer-main .footer__content-container .column-full ul { display: flex; align-items: center; gap: 30px; margin: 0; flex-wrap: wrap; }
+}
