@@ -66,6 +66,9 @@ endif;
 ?>
 
 </head>
+<?php if( get_field('enable_global_banner', 'options') == true ) {
+	echo '<div class="global-banner-spacer"></div>';
+}?>
 <?php
 genesis_markup(
 	[
@@ -120,3 +123,9 @@ genesis_markup(
 	]
 );
 genesis_structural_wrap( 'site-inner' );
+
+
+if( get_field('enable_global_banner', 'options') == true ) {
+	$banner_copy = get_field('banner_copy', 'options');
+	echo '<div class="global-banner"><p>' . esc_html( $banner_copy ) . '</p></div>';
+}
