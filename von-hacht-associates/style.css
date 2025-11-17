@@ -4036,7 +4036,7 @@ body td:first-child {
 }
 
 .areas-list {
-    width: 100vw;
+    width: 100%;
 }
 
 .areas-list__container {

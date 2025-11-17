@@ -1,10 +1,13 @@
 /* remove second attorney block on webinars page */
 .page-id-23318 .attorney-info__item:nth-child(even),
 .page-id-20794 .attorney-info__item:nth-child(even),
-.page-id-23554 .attorney-info__item:nth-child(even) {
-    flex-direction: row-reverse;
-    display: none;
-}
+.page-id-23554 .attorney-info__item:nth-child(even),
+.page-id-23318 .attorney-info__item:nth-child(even){ flex-direction: row-reverse; display: none; }
+.page-id-23318 .attorney-info__item:last-of-type { display:none; }
+
+.areas-list { width: 100%; }
+.areas-list__children { padding: 20px 0 0 0; }
+.areas-list__child .areas-list__link { border-bottom-left-radius: 0; border-top-left-radius: 0; }
 
 .spacer-30 { height: 30px; display: block; width: 100%; }
 .site-footer { padding-bottom: 0; }
